@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_book_list">
+
+    <fragment
+        android:id="@+id/navigation_book_list"
+        android:name="com.example.my_library_android.view.fragment.main.BookListFragment"
+        android:label="@string/title_book_list"
+        tools:layout="@layout/fragment_book_list">
+        <action
+            android:id="@+id/action_list_to_edit"
+            app:destination="@id/navigation_book_edit"
+            app:popUpTo="@id/navigation_book_list"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_book_edit"
+        android:name="com.example.my_library_android.view.fragment.main.BookEditFragment"
+        android:label="@string/title_edit_book"
+        tools:layout="@layout/fragment_book_edit">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <argument
+            android:name="editItem"
+            app:argType="com.example.my_library_android.model.data.response.BookResult" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_logout"
+        android:name="com.example.my_library_android.view.fragment.main.LogoutFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

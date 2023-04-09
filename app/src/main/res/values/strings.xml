@@ -1,0 +1,67 @@
+<resources>
+    <!--  AndroidManifest.xml  -->
+    <string name="app_name">MyLibrary-Android</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <!-- activity_login.xml   -->
+    <string name="title_login">ログイン</string>
+    <string name="action_login">ログイン</string>
+    <string name="move_signup">新規登録</string>
+    <!--  activity_signup.xml    -->
+    <string name="title_signup">サインアップ</string>
+    <string name="action_signup">サインアップ</string>
+    <!--  activity_login.xml and activity_signup.xml  -->
+    <string name="hint_mail">メールアドレス</string>
+    <string name="hint_password">パスワード</string>
+    <string name="hint_confirm_password">パスワード確認</string>
+    <!--  book_list_item.xml  -->
+    <string name="description_image">画像</string>
+    <string name="sample_name">名前</string>
+    <string name="sample_price">金額</string>
+    <string name="sample_date">購入日</string>
+    <!--  fragment_book_list.xml  -->
+    <string name="text_list_empty">書籍情報を追加してください。</string>
+    <!--  fragment_book_edit.xml  -->
+    <string name="hint_name">書籍名</string>
+    <string name="hint_price">価格</string>
+    <string name="hint_purchase_date">購入日</string>
+    <!--  fragment_logout.xml  -->
+    <string name="action_logout">ログアウト</string>
+    <!--  bottom_nav_menu.xml  -->
+    <string name="title_book_list">書籍一覧</string>
+    <string name="title_account">アカウント</string>
+    <!--  toolbar_add_menu.xml  -->
+    <string name="menu_add">追加</string>
+    <!--  toolbar_completion_menu.xml  -->
+    <string name="menu_completion">完了</string>
+    <!--  mobile_navigation.xml  -->
+    <string name="title_add_book">登録</string>
+    <string name="title_edit_book">書籍編集</string>
+    <!--  BookAddActivity.kt and BookEditFragment.kt  -->
+    <string name="string_format">%d-%02d-%02d</string>
+    <!--  AlertDialogFragment.kt  -->
+    <string name="cancel">キャンセル</string>
+    <!--  MyBookListAdapter  -->
+    <string name="string_price">%d円</string>
+    <string name="string_purchase_date">購入日: %1$s</string>
+    <!--  LoginActivity.kt and SignupActivity.kt and
+      BookAddActivity.kt and BookEditActivity.kt-->
+    <string name="error_title_validation">バリデーションエラー</string>
+    <string name="error_title_login">ログインエラー</string>
+    <string name="error_title_sign_in">サインインエラー</string>
+    <string name="error_title_connection">通信エラー</string>
+    <string name="error_message_mail_empty">メールアドレスを入力してください。\n</string>
+    <string name="error_message_password_length">パスワードは6文字以上です。\n</string>
+    <string name="error_message_confirm_password_empty">パスワードの確認を入力してください。\n</string>
+    <string name="error_message_password_not_equal">パスワード確認の入力内容が違います。\n</string>
+    <string name="error_message_login_failed">ログインに失敗しました。</string>
+    <string name="error_message_sign_up_failed">サインアップに失敗しました。</string>
+    <string name="error_message_logout_failed">ログアウトに失敗しました。</string>
+    <string name="error_message_name_empty">書籍名を入力してください。\n</string>
+    <string name="error_message_price_no_number">金額は数字を入力してください。\n</string>
+    <string name="error_message_date_not_date">購入日には日付を入力してください。\n</string>
+    <string name="empty"> </string>
+    <!--  BookAddViewModel.kt  -->
+    <string name="error_message_book_add_failed">書籍を追加できませんでした。\n</string>
+    <!--  BookEditViewModel.kt  -->
+    <string name="error_message_book_edit_failed">書籍を編集できませんでした。\n</string>
+</resources>

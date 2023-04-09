@@ -1,0 +1,25 @@
+<resources>
+    <!--  Width Size  -->
+    <dimen name="width_match">0dp</dimen>
+    <dimen name="width_large">80dp</dimen>
+    <dimen name="width_huge">184dp</dimen>
+
+    <!--  Height Size  -->
+    <dimen name="height_match">0dp</dimen>
+    <dimen name="height_medium">48dp</dimen>
+    <dimen name="height_large">80dp</dimen>
+    <dimen name="height_huge">184dp</dimen>
+
+    <!--  Margin Size  -->
+    <dimen name="margin_tiny">8dp</dimen>
+    <dimen name="margin_small">20dp</dimen>
+    <dimen name="margin_medium">32dp</dimen>
+    <dimen name="margin_large">40dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+
+    <!--  Padding Size  -->
+    <dimen name="padding_tiny">8dp</dimen>
+    <dimen name="padding_large">40dp</dimen>
+    <dimen name="padding_huge">80dp</dimen>
+
+</resources>

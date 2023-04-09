@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.BookAddActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="@dimen/width_match"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/toolbar_completion_menu"
+        app:title="@string/title_add_book"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="@dimen/width_huge"
+        android:layout_height="@dimen/height_huge"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:contentDescription="@string/description_image"
+        android:src="@drawable/default_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/default_image" />
+
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="@dimen/width_match"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@color/lite_gray"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="@dimen/height_medium"
+        android:paddingStart="@dimen/padding_tiny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_image"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/add_price"
+        android:layout_width="@dimen/width_match"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@color/lite_gray"
+        android:ems="10"
+        android:hint="@string/hint_price"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="@dimen/height_medium"
+        android:paddingStart="@dimen/padding_tiny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_name"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/add_purchase_date"
+        android:layout_width="@dimen/width_match"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@color/lite_gray"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/hint_purchase_date"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="@dimen/height_medium"
+        android:paddingStart="@dimen/padding_tiny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_price"
+        tools:ignore="RtlSymmetry,TextContrastCheck,TextFields" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
