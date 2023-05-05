@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_book_list"
-        android:name="com.example.my_library_android.view.fragment.main.BookListFragment"
+        android:name="com.example.my_bookshelf_android.view.fragment.main.BookListFragment"
         android:label="@string/title_book_list"
         tools:layout="@layout/fragment_book_list">
         <action
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_book_edit"
-        android:name="com.example.my_library_android.view.fragment.main.BookEditFragment"
+        android:name="com.example.my_bookshelf_android.view.fragment.main.BookEditFragment"
         android:label="@string/title_edit_book"
         tools:layout="@layout/fragment_book_edit">
         <argument
@@ -27,12 +27,12 @@
             app:argType="integer" />
         <argument
             android:name="editItem"
-            app:argType="com.example.my_library_android.model.data.response.BookResult" />
+            app:argType="com.example.my_bookshelf_android.model.data.response.BookResult" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_logout"
-        android:name="com.example.my_library_android.view.fragment.main.LogoutFragment"
+        android:name="com.example.my_bookshelf_android.view.fragment.main.LogoutFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_logout" />
 </navigation>

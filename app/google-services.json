@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "290177886055",
-    "project_id": "mylibraryandroid",
-    "storage_bucket": "mylibraryandroid.appspot.com"
+    "project_id": "mybookshelfandroid",
+    "storage_bucket": "mybookshelfandroid.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:290177886055:android:42cfc090d1f6cb8180b1c2",
         "android_client_info": {
-          "package_name": "com.example.my_library_android"
+          "package_name": "com.example.my_bookshelf_android"
         }
       },
       "oauth_client": [
